@@ -152,6 +152,8 @@ def shoe_size(player_name)
   end
 end
 
+
+
 def team_colors(team)
   game_hash.each do |each_team, each_team_hash|
       if team==each_team_hash[:team_name]
@@ -159,6 +161,8 @@ def team_colors(team)
       end
   end
 end
+
+
 
 def team_names
   array_of_team_names=[]
@@ -168,11 +172,24 @@ def team_names
  array_of_team_names
 end
 
-def player_numbers(team_name)
+
+
+def player_numbers(team)
+  array_of_team_jersey_numbers=[]
+  game_hash.each do |each_team, each_team_hash|
+    if team==each_team_hash[:team_name]
+      array_of_team_jersey_numbers << each_team_hash[:players][:number]
+    end
+  end
+  array_of_team_jersey_numbers
 end
+
+
 
 def player_stats(player_name)
 end
+
+
 
 def big_shoe_rebounds
 end
