@@ -162,7 +162,7 @@ end
 
 def team_names
   array_of_team_names=[]
-  game_hash
+  array_of_team_names << game_hash
   array_of_team_names
 end
 
