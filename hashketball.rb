@@ -1,5 +1,5 @@
 # Write your code below game_hash
-
+require 'pry'
 
 def game_hash
   {
@@ -131,7 +131,8 @@ end
 # Write code here
 
 def player_helper
-  game_hash[:home][:players].concat game_hash[:away][:players]
+  all_players=game_hash[:home][:players].concat game_hash[:away][:players]
+  binding.pry
 end
 
 
