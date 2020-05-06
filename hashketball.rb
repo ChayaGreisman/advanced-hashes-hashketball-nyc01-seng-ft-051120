@@ -161,6 +161,9 @@ def team_colors(team)
 end
 
 def team_names
+  array_of_team_names=[]
+  game_hash
+  array_of_team_names
 end
 
 def player_numbers(team_name)
