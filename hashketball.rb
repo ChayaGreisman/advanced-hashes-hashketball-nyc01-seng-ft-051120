@@ -163,8 +163,9 @@ end
 def team_names
   array_of_team_names=[]
   game_hash.each do |each_team, each_team_hash|
-  array_of_team_names << each_team_hash[:team_name]
-  array_of_team_names
+    array_of_team_names << each_team_hash[:team_name]
+  end
+ array_of_team_names
 end
 
 def player_numbers(team_name)
