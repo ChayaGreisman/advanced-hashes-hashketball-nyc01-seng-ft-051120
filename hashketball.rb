@@ -131,8 +131,11 @@ end
 # Write code here
 
 def player_helper
+  
   all_players=game_hash[:home][:players].concat game_hash[:away][:players]
+  
   binding.pry
+  
 end
 
 
@@ -144,19 +147,19 @@ def num_points_scored(player)
   end
 end
 
-def shoe_size
+def shoe_size(player_name)
 end
 
-def team_colors
+def team_colors(team_name)
 end
 
 def team_names
 end
 
-def player_numbers
+def player_numbers(team_name)
 end
 
-def player_stats
+def player_stats(player_name)
 end
 
 def big_shoe_rebounds
