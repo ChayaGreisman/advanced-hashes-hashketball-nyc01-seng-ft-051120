@@ -177,8 +177,10 @@ end
 def player_numbers(team)
   array_of_team_jersey_numbers=[]
   game_hash.each do |each_team, each_team_hash|
-    if team==each_team_hash[:team_name]
-      array_of_team_jersey_numbers << each_team_hash[:players][:number]
+    each_team_hash.each do |team_attribute, team_attribute_value|
+      if team==each_team_hash[:team_name]
+        array_of_team_jersey_numbers << each_team_hash[:players][:number]
+      end
     end
   end
   array_of_team_jersey_numbers
