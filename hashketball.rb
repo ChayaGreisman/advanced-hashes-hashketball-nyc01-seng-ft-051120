@@ -1,4 +1,6 @@
 # Write your code below game_hash
+
+
 def game_hash
   {
     home: {
@@ -127,3 +129,34 @@ def game_hash
 end
 
 # Write code here
+
+def player_helper
+  game_hash[:home][:players].concat game_hash[:away][:players]
+end
+
+
+def num_points_scored(player)
+  player_helper.each do 
+    if player==player_helper[index][:player_name]
+      return player_helper[index][:points]
+    end
+  end
+end
+
+def shoe_size
+end
+
+def team_colors
+end
+
+def team_names
+end
+
+def player_numbers
+end
+
+def player_stats
+end
+
+def big_shoe_rebounds
+end
