@@ -131,12 +131,8 @@ end
 # Write code here
 
 def player_helper
-  
 game_hash[:home][:players].concat game_hash[:away][:players]
-  
 end
-
-
 
 def num_points_scored(player_name)
   player_helper.each do |each_player_hash|
@@ -146,7 +142,14 @@ def num_points_scored(player_name)
   end
 end
 
+
+
 def shoe_size(player_name)
+  player_helper.each do |each_player_hash|
+    if player_name==each_player_hash[:player_name]
+      return each_player_hash[:shoe]
+    end
+  end
 end
 
 def team_colors(team_name)
