@@ -132,12 +132,12 @@ end
 
 def player_helper
   
-  game_hash[:home][:players].concat game_hash[:away][:players]
+  all_players=game_hash[:home][:players].concat game_hash[:away][:players]
   
-  binding.pry
+  
   
 end
-
+binding.pry
 
 def num_points_scored(player)
   player_helper.each do 
