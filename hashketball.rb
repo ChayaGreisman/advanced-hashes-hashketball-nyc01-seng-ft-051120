@@ -141,7 +141,7 @@ end
 def num_points_scored(player_name)
   player_helper.each do |each_player_hash|
     if player_name==player_helper[each_player_hash][:player_name]
-      return player_helper[each_player_hash][:points]
+      return player_helper[each_player_hash][:points.to_int]
     end
   end
 end
